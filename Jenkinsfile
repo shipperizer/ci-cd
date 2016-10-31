@@ -13,4 +13,7 @@ node('local') {
             }
         }
     }
+    stage('Done') {
+        sh 'echo Done'
+    }
 }
