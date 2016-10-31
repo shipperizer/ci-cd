@@ -9,7 +9,7 @@ node('local') {
     stage('....again but with params') {
         dir('folder') {
             withEnv(['param1=abcd']) {
-                sh './script.sh ${env.param1} place'
+                sh 'script.sh ${env.param1} place'
             }
         }
     }
